@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Pagamento confirmado · Alice'B</title>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ED308J01GL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-ED308J01GL');
+  gtag('event', 'purchase', {
+    event_category: 'conversao',
+    event_label: 'Pacote Exclusivo',
+    value: 999,
+    currency: 'MZN'
+  });
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#070B12; --surface:#101828; --surface-2:#141E33;
+  --line:rgba(120,160,255,.12);
+  --text:#EEF3FB; --text-dim:#9AA8C0; --text-faint:#5B6880;
+  --blue:#00AFF0; --violet:#7C5CFF; --gold:#F3C24B; --green:#3DDC84;
+  --accent:#F3C24B; --accent-2:#E09A2F;
+  --grad:linear-gradient(120deg,#F3C24B 0%,#E09A2F 100%);
+  --font-ui:"Manrope",system-ui,sans-serif;
+  --font-display:"Fraunces",Georgia,serif;
+  --glow:0 0 40px rgba(243,194,75,.16);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);color:var(--text);font-family:var(--font-ui);
+  min-height:100vh;-webkit-font-smoothing:antialiased;
+}
+@media(min-width:600px){
+  body{background:
+    radial-gradient(900px 500px at 15% 0%, rgba(243,194,75,.16), transparent 60%),
+    radial-gradient(800px 600px at 85% 100%, rgba(124,92,255,.10), transparent 60%),
+    #04070D;}
+}
+.stage{max-width:480px;margin:0 auto;min-height:100vh;background:var(--bg);
+  box-shadow:0 0 80px rgba(0,0,0,.6);padding-bottom:60px}
+@media(min-width:600px){.stage{border-left:1px solid var(--line);border-right:1px solid var(--line)}}
+
+/* ---------- confirmação ---------- */
+.top{
+  padding:52px 24px 34px;text-align:center;position:relative;overflow:hidden;
+  background:radial-gradient(500px 260px at 50% 0%, rgba(243,194,75,.16), transparent 70%);
+}
+.check{
+  width:78px;height:78px;margin:0 auto 22px;border-radius:50%;
+  background:var(--grad);display:flex;align-items:center;justify-content:center;
+  font-size:34px;box-shadow:var(--glow);
+  animation:pop .55s cubic-bezier(.2,1.4,.4,1) both;
+}
+@keyframes pop{from{transform:scale(.5);opacity:0}to{transform:scale(1);opacity:1}}
+.eyebrow{
+  font-size:10.5px;font-weight:800;letter-spacing:2.4px;text-transform:uppercase;
+  color:var(--accent);margin-bottom:9px;
+}
+h1{font-family:var(--font-display);font-weight:500;font-size:31px;line-height:1.12;letter-spacing:-.7px}
+h1 em{font-style:italic;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lede{font-size:14.5px;color:var(--text-dim);line-height:1.65;margin-top:12px}
+
+/* ---------- cartão de resgate ---------- */
+.claim{margin:0 20px;padding:24px 20px;border-radius:22px;
+  background:linear-gradient(170deg, rgba(243,194,75,.16), var(--surface) 55%);
+  border:1.5px solid rgba(243,194,75,.55);box-shadow:var(--glow);text-align:center}
+.claim-pack{font-size:12px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase;color:var(--accent)}
+.claim-title{font-family:var(--font-display);font-size:22px;font-weight:600;margin-top:6px;letter-spacing:-.3px}
+.claim-sub{font-size:13.5px;color:var(--text-dim);margin-top:8px;line-height:1.6}
+.claim-btn{
+  display:block;margin-top:18px;padding:17px;border-radius:14px;text-decoration:none;
+  background:var(--grad);color:#241700;font-weight:800;font-size:16px;
+  box-shadow:var(--glow);transition:transform .15s ease;
+}
+.claim-btn:active{transform:scale(.98)}
+.claim-hint{font-size:11.5px;color:var(--text-faint);margin-top:12px}
+
+/* ---------- instruções ---------- */
+.steps{padding:28px 20px 0}
+.steps h2{font-family:var(--font-display);font-size:19px;font-weight:600;margin-bottom:14px}
+.step{display:flex;gap:13px;margin-bottom:14px}
+.step-n{
+  flex-shrink:0;width:26px;height:26px;border-radius:50%;
+  background:var(--surface-2);border:1px solid var(--line);
+  display:flex;align-items:center;justify-content:center;
+  font-size:12px;font-weight:800;color:var(--accent);
+}
+.step-t{font-size:13.5px;color:var(--text-dim);line-height:1.6;padding-top:3px}
+.step-t b{color:var(--text)}
+
+.warn{
+  margin:20px 20px 0;padding:15px 16px;border-radius:14px;
+  background:rgba(243,194,75,.07);border:1px solid rgba(243,194,75,.22);
+}
+.warn b{font-size:13px;color:var(--gold);display:block;margin-bottom:5px}
+.warn p{font-size:12.5px;color:var(--text-dim);line-height:1.6}
+
+/* ---------- upsell ---------- */
+.upsell{padding:38px 20px 0}
+.up-eyebrow{font-size:10.5px;font-weight:800;letter-spacing:2.4px;text-transform:uppercase;color:var(--accent);margin-bottom:7px}
+.up-title{font-family:var(--font-display);font-weight:500;font-size:24px;letter-spacing:-.5px;line-height:1.15}
+.up-title em{font-style:italic}
+.up-body{font-size:14px;color:var(--text-dim);line-height:1.7;margin-top:14px}
+.up-body p{margin-bottom:11px}
+.up-body strong{color:var(--text);font-weight:700}
+
+.offer{
+  margin-top:20px;padding:20px;border-radius:20px;
+  background:var(--surface);border:1px solid var(--line);
+}
+.offer.hi{border:1.5px solid rgba(243,194,75,.5);background:linear-gradient(170deg, rgba(243,194,75,.08), var(--surface) 50%)}
+.offer-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.offer-name{font-size:15.5px;font-weight:800}
+.offer-price{font-family:var(--font-display);font-size:27px;font-weight:600;letter-spacing:-.5px;white-space:nowrap}
+.offer-price small{font-size:13px;color:var(--text-faint);font-family:var(--font-ui);font-weight:600}
+.offer-tag{font-size:12.5px;font-style:italic;color:var(--text-dim);margin-top:2px}
+.offer-list{list-style:none;margin:14px 0 16px;display:flex;flex-direction:column;gap:8px}
+.offer-list li{font-size:13.5px;color:var(--text-dim);padding-left:24px;position:relative;line-height:1.45}
+.offer-list li::before{
+  content:"\2713";position:absolute;left:0;top:0;width:16px;height:16px;border-radius:50%;
+  font-size:10px;font-weight:800;display:flex;align-items:center;justify-content:center;
+  background:rgba(243,194,75,.15);color:#F3C24B;
+}
+.offer-list li.star{color:var(--text)}
+.offer-list li.star::before{content:"\2605";background:rgba(243,194,75,.15);color:var(--gold)}
+.offer-btn{
+  display:block;text-align:center;text-decoration:none;padding:15px;border-radius:13px;
+  font-weight:800;font-size:14.5px;color:#fff;
+  background:var(--surface-2);border:1px solid var(--line);transition:transform .15s ease;
+}
+.offer-btn:active{transform:scale(.98)}
+.offer.hi .offer-btn{background:var(--grad);border:none;color:#241700;box-shadow:var(--glow)}
+
+.closing{padding:26px 20px 0;font-size:14px;color:var(--text-dim);line-height:1.7}
+.closing p{margin-bottom:10px}
+.closing .sig{font-family:var(--font-display);font-style:italic;font-size:17px;color:var(--text);margin-top:14px}
+
+.footer{text-align:center;padding:34px 20px 20px;font-size:11px;color:var(--text-faint);
+  border-top:1px solid var(--line);margin-top:38px;line-height:1.8}
+
+/* ---------- barra fixa ---------- */
+.sticky{
+  position:fixed;left:0;right:0;bottom:0;z-index:900;max-width:480px;margin:0 auto;
+  padding:12px 16px 18px;background:linear-gradient(180deg,transparent,rgba(4,7,13,.94) 30%);
+  transform:translateY(120%);transition:transform .35s ease;pointer-events:none;
+}
+.sticky.show{transform:translateY(0);pointer-events:auto}
+.sticky a{
+  display:block;text-align:center;text-decoration:none;padding:15px;border-radius:14px;
+  background:var(--grad);color:#241700;font-weight:800;font-size:15px;
+  box-shadow:0 10px 40px rgba(0,0,0,.55), var(--glow);
+}
+@media(prefers-reduced-motion:reduce){
+  .check{animation:none} .sticky{transition:none} html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<div class="stage">
+
+  <div class="top">
+    <div class="check">👑</div>
+    <div class="eyebrow">Pagamento confirmado</div>
+    <h1>Agora és <em>meu</em>, a sério 👑</h1>
+    <p class="lede">O pagamento entrou. Chegaste ao topo — e eu vou tratar-te como tal.</p>
+  </div>
+
+  <div class="claim">
+    <div class="claim-pack">Pacote Exclusivo · 999MT</div>
+    <div class="claim-title">O teu conteúdo está aqui</div>
+    <div class="claim-sub">Clica no botão para abrir a pasta. O acesso é imediato e não expira.</div>
+    <a class="claim-btn" href="https://drive.google.com/drive/folders/19jZE3Kh6FePn__P1KJQtYYo7Ve9FVaiI?usp=sharing" target="_blank" rel="noopener"
+       onclick="gtag('event','resgatou_conteudo',{event_category:'entrega',event_label:'Pacote Exclusivo'})">
+       Resgatar o meu conteúdo →
+    </a>
+    <div class="claim-hint">Abre numa nova janela · Google Drive</div>
+  </div>
+
+  <div class="steps">
+    <h2>Como aceder</h2>
+    <div class="step"><div class="step-n">1</div><div class="step-t">Clica no botão acima — abre a pasta com <b>todas as fotos e vídeos</b> do teu pacote.</div></div>
+    <div class="step"><div class="step-n">2</div><div class="step-t"><b>Guarda esta página nos favoritos</b> ou copia o link da pasta. É por aqui que voltas a entrar.</div></div>
+    <div class="step"><div class="step-n">3</div><div class="step-t">Podes ver online ou <b>descarregar para o telemóvel</b> e ficar com tudo guardado.</div></div>
+    <div class="step"><div class="step-n">4</div><div class="step-t">O <b>meu WhatsApp está dentro da pasta</b> — escreve-me e combinamos os teus 3 dias de acesso a live. Lembrando que na live não estarás sozinho; você e mais algumas pessoas que pagaram vão poder me ver em direto. 👑</div></div>
+  </div>
+
+  <div class="warn">
+    <b>⚠️ O link é só teu</b>
+    <p>Não partilhes nem reencaminhes esta pasta. Os acessos são monitorizados e a partilha do conteúdo dá origem ao bloqueio imediato, sem reembolso.</p>
+  </div>
+
+  
+  <div class="upsell">
+    <div class="up-eyebrow">A partir de agora</div>
+    <div class="up-title">Chegaste ao <em>topo</em> 👑</div>
+    <div class="up-body">
+      <p>Não há nível acima deste. Tens tudo o que eu tenho para dar: o conteúdo completo, os 3 dias de acesso a live, os áudios, as chamadas privadas — e a minha atenção.</p>
+      <p><strong>Vou falar contigo pessoalmente no WhatsApp para combinarmos tudo.</strong> A partir daqui, é entre nós dois.</p>
+      <p>Obrigada por teres chegado até aqui. A sério. 💋</p>
+      <p class="sig">Até já. — Alice</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    © 2026 Alice'B · Conteúdo +18 · Todos os direitos reservados<br>
+    Proibida a partilha ou redistribuição do conteúdo.
+  </div>
+
+</div>
+
+<div class="sticky" id="sticky">
+  <a href="https://drive.google.com/drive/folders/19jZE3Kh6FePn__P1KJQtYYo7Ve9FVaiI?usp=sharing" target="_blank" rel="noopener"
+     onclick="gtag('event','resgatou_conteudo',{event_category:'entrega',event_label:'Pacote Exclusivo_barra'})">
+     Resgatar o meu conteúdo →
+  </a>
+</div>
+
+<script>
+(function(){
+  var bar = document.getElementById('sticky');
+  if(!bar) return;
+  var claim = document.querySelector('.claim');
+  function update(){
+    var r = claim.getBoundingClientRect();
+    bar.classList.toggle('show', r.bottom < 40);
+  }
+  window.addEventListener('scroll', update, {passive:true});
+  update();
+})();
+</script>
+</body>
+</html>
